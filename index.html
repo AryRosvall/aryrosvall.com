@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
+  <title>Ary Rosvall</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+    }
+
+    nav {
+      width: 100%;
+      background-color: #E6ECF8;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      font-size: 20px;
+    }
+
+    ul {
+      text-decoration: none;
+      list-style: none;
+    }
+
+    nav ul {
+      text-decoration: none;
+      list-style: none;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-end;
+      align-content: space-between;
+      height: auto;
+      align-items: center;
+      margin-right: 30px;
+    }
+
+    nav ul li {
+      margin-right: 20px;
+    }
+
+    .hero {
+      width: 100vw;
+      height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+    }
+    
+    .hero-title {
+      text-align: justify;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      margin-right: 50px;
+      font-size: 57px;
+      font-weight: 700;
+    }
+
+    .hero-title span {
+      text-align: justify;
+      font-weight: 300;
+      font-size: 30px;
+    }
+
+    .skills {
+      width: 100vw;
+      height: 100vh;
+    }
+
+    h1 {
+      font-size: 40px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .skills__container {
+      border-radius: 12px;
+      background-color: #FFFFFF;
+      margin: 30px;
+      border: 1px solid #E6ECF8;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      height: auto;
+    }
+
+    .skills__item {
+      text-align: center;
+      padding: 60px 35px;
+      border-right: 1px solid #E6ECF8;
+    }
+
+    .skills__item:last-child {
+      border: none;
+    }
+
+    .skills__item i {
+      margin: 50px;
+    }
+
+    .skills__item-title {
+      font-weight: 700;
+      margin: 50px;
+      font-size: 25px;
+    }
+
+    .skills__item-languages {
+      margin: 50px;
+    }
+
+    .portfolio {
+      width: 100%;
+      height: 100%;
+    }
+
+    .portfolio__container {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(100px, 293px));
+            justify-content: center;
+            grid-gap:28px;
+        }
+
+
+    .porfolio__item {
+        cursor: pointer;
+        display: block;
+        position: relative;
+    }
+
+    .porfolio__item-image {
+        margin:0;
+    }
+
+    .porfolio__item-image img {
+        width: 100%;
+        vertical-align: top;
+    }
+
+    .porfolio__item-overlay {
+        background: rgba(0,0,0, .4);
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top:0;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+    }
+
+    .porfolio__item:hover .porfolio__item-overlay {
+        display: flex;
+    }
+
+    .portfolio__item-title, .porfolio__item-comments {
+        width: 80px;
+        margin: 5px;
+        font-weight: bold;
+        text-align: center;
+        display: inline-block;
+    }
+
+    footer {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-areas: "form media";
+     align-items: flex-start;
+     justify-items: center;
+     margin: 30px 10px;
+
+    }
+
+    .form {
+      grid-area: form;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 1.5em;
+      border-radius: 10px;
+    }
+
+    .form input {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #dbdbe2;
+      border-radius: 5px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+
+    .form p {
+      font-size: 20px;
+      color: #3a3b3f;
+      margin-bottom: 1em;
+    }
+
+    .form button {
+      background: #93ca3f;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+      border: none;
+      border-bottom: 5px solid #6d932b;
+      display: inline-block;
+    }
+
+    .footer__social-media {
+      grid-area: media;
+      align-self: center;
+    }
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li>About</li>
+        <li>Portfolio</li>
+        <li>CV</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-image">
+        <img src="" alt="">
+      </div>
+      <div class="hero-title">
+        Hi! I'm Arantxa. 
+        <span>
+          I am passionate about building excellent software that improves the lives of those around me. I specialize in creating software for clients ranging from individuals and small-businesses all the way to large enterprise corporations. All of my work is produced locally from Moscow, Idaho. What would you do if you had a software expert available at your fingertips?
+        </span>
+      </div>
+    </section>
+    <section class="skills">
+      <h1>Skills</h1>
+      <div class="skills__container">
+        <div class="skills__item">
+          <i>
+            icon
+          </i>
+          <p class="skills__item-title">Frontend</p>
+          <p class="skills__item-description">
+            I like to code things from scratch, and enjoy bringing ideas to life in the browser.
+          </p>
+          <p class="skills__item-languages">
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </p>
+        </div>
+        <div class="skills__item">
+          <i>
+            icon
+          </i>
+          <p class="skills__item-title">Backend</p>
+          <p class="skills__item-description">
+            I like to code things from scratch, and enjoy bringing ideas to life in the browser.
+          </p>
+          <p class="skills__item-languages">
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </p>
+        </div>
+        <div class="skills__item">
+          <i>
+            icon
+          </i>
+          <p class="skills__item-title">Project Management</p>
+          <p class="skills__item-description">
+            I like to code things from scratch, and enjoy bringing ideas to life in the browser.
+          </p>
+          <p class="skills__item-languages">
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio">
+      <h1>My recent work</h1>
+      <section class="portfolio__container">
+        <a href="" class="porfolio__item">
+          <figure class="porfolio__item-image">
+              <img src="compu.jpg" alt="">
+          </figure>
+          <div class="porfolio__item-overlay">
+              <span class="portfolio__item-title">Lorem Ipsum</span>
+            
+          </div>
+        </a>
+        <a href="" class="porfolio__item">
+          <figure class="porfolio__item-image">
+              <img src="compu2.jpg" alt="">
+          </figure>
+          <div class="porfolio__item-overlay">
+              <span class="portfolio__item-title">Lorem Ipsum</span>
+            
+          </div>
+        </a>
+        <a href="" class="porfolio__item">
+          <figure class="porfolio__item-image">
+              <img src="compu3.jpg" alt="">
+          </figure>
+          <div class="porfolio__item-overlay">
+              <span class="portfolio__item-title">Lorem Ipsum</span>
+          </div>
+        </a>
+        <a href="" class="porfolio__item">
+          <figure class="porfolio__item-image">
+              <img src="compu.jpg" alt="">
+          </figure>
+          <div class="porfolio__item-overlay">
+              <span class="portfolio__item-title">Lorem Ipsum</span>
+            
+          </div>
+        </a>
+        <a href="" class="porfolio__item">
+          <figure class="porfolio__item-image">
+              <img src="compu2.jpg" alt="">
+          </figure>
+          <div class="porfolio__item-overlay">
+              <span class="portfolio__item-title">Lorem Ipsum</span>
+            
+          </div>
+        </a>
+        <a href="" class="porfolio__item">
+          <figure class="porfolio__item-image">
+              <img src="compu3.jpg" alt="">
+          </figure>
+          <div class="porfolio__item-overlay">
+              <span class="portfolio__item-title">Lorem Ipsum</span>
+            
+          </div>
+        </a>
+        <a href="" class="porfolio__item">
+          <figure class="porfolio__item-image">
+              <img src="compu.jpg" alt="">
+          </figure>
+          <div class="porfolio__item-overlay">
+              <span class="portfolio__item-title">Lorem Ipsum</span>
+            
+          </div>
+        </a>
+        <a href="" class="porfolio__item">
+          <figure class="porfolio__item-image">
+              <img src="compu2.jpg" alt="">
+          </figure>
+          <div class="porfolio__item-overlay">
+              <span class="portfolio__item-title">Lorem Ipsum</span>
+            
+          </div>
+        </a>
+        <a href="" class="porfolio__item">
+          <figure class="porfolio__item-image">
+              <img src="compu3.jpg" alt="">
+          </figure>
+          <div class="porfolio__item-overlay">
+              <span class="portfolio__item-title">Lorem Ipsum</span>
+            
+          </div>
+        </a>
+      </section>
+    </section>
+  </main>
+  <footer>
+    <section class="footer__contact">
+      <p>Get in touch!</p>
+      <form class="form">
+        <input type="text" name="" id="" placeholder="name">
+        <input type="email" name="" id="" placeholder="email">
+        <button type="submit">
+          Send
+        </button>
+      </form>
+    </section>
+    <section class="footer__social-media">
+      <a href="" class="social_media__item"><span class="flaticon-001-facebook">Facebook</span></a>
+      <a href="" class="social_media__item"><span class="flaticon-001-facebook">Linkedin</span></a>
+      <a href="" class="social_media__item"><span class="flaticon-001-facebook">Twitter</span></a>
+    </section>
+  </footer>
+</body>
+</html>
