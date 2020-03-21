@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.Hero {
+  width: 100vw;
+  height: 100vh;
+  background-color: red;
+  /* The image used */
+  background-image: url("https://thumbs.dreamstime.com/b/autumn-oak-leaf-fantastic-beautiful-spray-bubbles-blue-background-magic-autumn-blue-background-yellow-oak-leaf-158238643.jpg");
+
+  /* Set a specific height */
+min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Menu {
+  background-color: black;
+  width: 100px;
+  position: absolute;
+  z-index: 100;
+  right: 0;
+}
+
+
+.Profile {
+  width: 100vw;
+  height: 100vh;
+  background-color: blue;
+  text-align: center;
+}
+
+.Profile figure img {
+  border-radius: 50%;
+  border: 20px solid black;
+  width: 300px;
+}

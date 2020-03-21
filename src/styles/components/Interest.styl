@@ -1,0 +1,67 @@
+@import "../vars.styl"
+
+
+
+    .portfolio {
+      width: 100%;
+      height: 100%;
+    }
+
+    .portfolio hr {
+      width: 100px;
+      margin-bottom: 30px;
+      border-bottom: 2px solid #b7b7b7;
+    }
+
+    .portfolio__container {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(100px, 293px));
+      justify-content: center;
+      grid-gap:28px;
+      margin: 20px 15px;
+      padding: 30px;
+      background-color: #f8f9fa;
+      box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+        }
+
+
+    .porfolio__item {
+        cursor: pointer;
+        display: block;
+        position: relative;
+    }
+
+    .porfolio__item-image {
+        margin:0;
+    }
+
+    .porfolio__item-image img {
+        width: 100%;
+        vertical-align: top;
+    }
+
+    .porfolio__item-overlay {
+        background: rgba(0,0,0, .4);
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top:0;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+    }
+
+    .porfolio__item:hover .porfolio__item-overlay {
+        display: flex;
+    }
+
+    .portfolio__item-title, .porfolio__item-comments {
+        width: 80px;
+        margin: 5px;
+        font-weight: bold;
+        text-align: center;
+        display: inline-block;
+    }
