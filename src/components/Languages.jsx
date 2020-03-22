@@ -6,15 +6,15 @@ const Languages = (props) => {
     languages = [
       {
         'name': 'Spanish',
-        'percentage': '90',
+        'percentage': '5',
       },
       {
         'name': 'Portuguese',
-        'percentage': '10',
+        'percentage': '1',
       },
       {
         'name': 'English',
-        'percentage': '60',
+        'percentage': '3.5',
       },
     ],
   } = props;
@@ -24,6 +24,7 @@ const Languages = (props) => {
       <h1 className='Languages__title'>
         Languages
       </h1>
+      <hr />
       <div className='Languages__container'>
         {languages.map(item => (
           <section key={item.name} className='Languages__item'>
@@ -32,10 +33,9 @@ const Languages = (props) => {
                 {item.name}
               </div>
               <div className='Languages__percentage'>
-                {item.percentage}
+                <div className='Stars' style={{ '--rating': parseInt(item.percentage.split('%'), 10) }} />
               </div>
             </div>
-            <progress max='100' value={parseInt(item.percentage.split('%'), 10)} />
           </section>
         ))}
       </div>
