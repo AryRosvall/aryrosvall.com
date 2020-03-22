@@ -11,7 +11,7 @@ const Profile = (props) => {
   return (
     <section className='Profile'>
       <h1>About Me</h1>
-      <h2>I'm a web developer</h2>
+      <h2>{profession}</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, consequatur totam. Eius tenetur officia,
         necessitatibus modi perspiciatis doloribus, aspernatur voluptate natus fugiat laboriosam, aperiam blanditiis

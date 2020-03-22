@@ -5,7 +5,11 @@ const Hero = (props) => {
 
   return (
     <section className='Hero'>
-    Arantxa Rosas del Valle
+      <div className='Hero__Container'>
+        <h1>Arantxa Rosas del Valle</h1>
+        <hr />
+        <h2>Full Stack Developer</h2>
+      </div>
     </section>
   );
 };
