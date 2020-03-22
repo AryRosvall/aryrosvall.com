@@ -1,14 +1,30 @@
 @import "../vars.styl"
 
-.Profile {
-  width: 100vw;
-  height: 100vh;
-  background-color: #583A65;
-  text-align: center;
-}
+.Profile
+  width 100vw
+  height 100vh
+  background-color #583A65
+  text-align center
+  color white
+  & h1
+    padding-top 40px
+    padding-bottom 10px
+    margin-bottom 10px
+  & figure img
+    border-radius 2px
+    border 10px solid #5B2750
+    width 200px
 
-.Profile figure img {
-  border-radius: 50%;
-  border: 20px solid #5B2750;
-  width: 300px;
-}
+.Profile__Container
+  margin 0 auto
+  width 60%
+
+.Profile__Description
+  padding-top 15%
+  display grid
+  grid-template-columns auto auto
+  & p
+    display flex
+    align-self center
+    text-align center
+    font-size 18px
