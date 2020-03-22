@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/components/Interest.styl';
+import '../styles/components/Projects.styl';
 
 const Projects = (props) => {
 
@@ -10,7 +10,7 @@ const Projects = (props) => {
       <section className='portfolio__container'>
         <a href='/' className='porfolio__item'>
           <figure className='porfolio__item-image'>
-            <img src='https://raw.githubusercontent.com/AryRosvall/aryrosvall.com/master/compu.jpg' alt='' />
+            <img src='https://s.imgur.com/images/logo-1200-630.jpg?2' alt='' />
           </figure>
           <div className='porfolio__item-overlay'>
             <span className='portfolio__item-title'>Lorem Ipsum</span>
@@ -19,7 +19,7 @@ const Projects = (props) => {
         </a>
         <a href='/' className='porfolio__item'>
           <figure className='porfolio__item-image'>
-            <img src='https://raw.githubusercontent.com/AryRosvall/aryrosvall.com/master/compu.jpg' alt='' />
+            <img src='https://s.imgur.com/images/logo-1200-630.jpg?2' alt='' />
           </figure>
           <div className='porfolio__item-overlay'>
             <span className='portfolio__item-title'>Lorem Ipsum</span>
@@ -28,7 +28,7 @@ const Projects = (props) => {
         </a>
         <a href='/' className='porfolio__item'>
           <figure className='porfolio__item-image'>
-            <img src='https://raw.githubusercontent.com/AryRosvall/aryrosvall.com/master/compu.jpg' alt='' />
+            <img src='https://s.imgur.com/images/logo-1200-630.jpg?2' alt='' />
           </figure>
           <div className='porfolio__item-overlay'>
             <span className='portfolio__item-title'>Lorem Ipsum</span>
@@ -36,16 +36,7 @@ const Projects = (props) => {
         </a>
         <a href='/' className='porfolio__item'>
           <figure className='porfolio__item-image'>
-            <img src='https://raw.githubusercontent.com/AryRosvall/aryrosvall.com/master/compu.jpg' alt='' />
-          </figure>
-          <div className='porfolio__item-overlay'>
-            <span className='portfolio__item-title'>Lorem Ipsum</span>
-
-          </div>
-        </a>
-        <a href='/' className='porfolio__item'>
-          <figure className='porfolio__item-image'>
-            <img src='https://raw.githubusercontent.com/AryRosvall/aryrosvall.com/master/compu.jpg' alt='' />
+            <img src='https://s.imgur.com/images/logo-1200-630.jpg?2' alt='' />
           </figure>
           <div className='porfolio__item-overlay'>
             <span className='portfolio__item-title'>Lorem Ipsum</span>
@@ -54,7 +45,7 @@ const Projects = (props) => {
         </a>
         <a href='/' className='porfolio__item'>
           <figure className='porfolio__item-image'>
-            <img src='https://raw.githubusercontent.com/AryRosvall/aryrosvall.com/master/compu.jpg' alt='' />
+            <img src='https://s.imgur.com/images/logo-1200-630.jpg?2' alt='' />
           </figure>
           <div className='porfolio__item-overlay'>
             <span className='portfolio__item-title'>Lorem Ipsum</span>
@@ -63,7 +54,7 @@ const Projects = (props) => {
         </a>
         <a href='/' className='porfolio__item'>
           <figure className='porfolio__item-image'>
-            <img src='https://raw.githubusercontent.com/AryRosvall/aryrosvall.com/master/compu.jpg' alt='' />
+            <img src='https://s.imgur.com/images/logo-1200-630.jpg?2' alt='' />
           </figure>
           <div className='porfolio__item-overlay'>
             <span className='portfolio__item-title'>Lorem Ipsum</span>
@@ -72,7 +63,7 @@ const Projects = (props) => {
         </a>
         <a href='/' className='porfolio__item'>
           <figure className='porfolio__item-image'>
-            <img src='https://raw.githubusercontent.com/AryRosvall/aryrosvall.com/master/compu.jpg' alt='' />
+            <img src='https://s.imgur.com/images/logo-1200-630.jpg?2' alt='' />
           </figure>
           <div className='porfolio__item-overlay'>
             <span className='portfolio__item-title'>Lorem Ipsum</span>
@@ -81,7 +72,16 @@ const Projects = (props) => {
         </a>
         <a href='/' className='porfolio__item'>
           <figure className='porfolio__item-image'>
-            <img src='https://raw.githubusercontent.com/AryRosvall/aryrosvall.com/master/compu.jpg' alt='' />
+            <img src='https://s.imgur.com/images/logo-1200-630.jpg?2' alt='' />
+          </figure>
+          <div className='porfolio__item-overlay'>
+            <span className='portfolio__item-title'>Lorem Ipsum</span>
+
+          </div>
+        </a>
+        <a href='/' className='porfolio__item'>
+          <figure className='porfolio__item-image'>
+            <img src='https://s.imgur.com/images/logo-1200-630.jpg?2' alt='' />
           </figure>
           <div className='porfolio__item-overlay'>
             <span className='portfolio__item-title'>Lorem Ipsum</span>
