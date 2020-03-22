@@ -1,11 +1,56 @@
 @import "../vars.styl"
 
 .Skills
-  margin: auto;
-  width: 60%;
-  box-shadow 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03)
-  border-radius 5px
+  margin auto
+  width 60%
 
 .Skills__container
   display grid
+  grid-template-columns repeat(2, 1fr)
+
+.Skills__item
+  margin 8px
+  & :hover
+    background-color hover-bgcolor
+    border-radius 2px
+    & .Stars
+      background-color hover-bgcolor
+      font-size 20px
+
+.Skills__info
+  display grid
   grid-template-columns: repeat(2, 1fr)
+
+.Skills__name
+  padding 5px
+
+@charset "UTF-8"
+:root
+  --star-size star-size
+  --star-background star-background
+  --star-color star-color
+
+.Stars
+  padding 5px
+  --percent calc(var(--rating) / 5 * 100%)
+  display inline-block
+  font-size var(--star-size)
+  font-family Times
+  line-height 1
+  &::before
+    content '★★★★★'
+    letter-spacing 3px
+    background linear-gradient(90deg, var(--star-color) var(--percent), var(--star-background) var(--percent))
+    -webkit-background-clip text
+    -webkit-text-fill-color transparent
+
+.Stars:hover
+  font-size 20px
+  background-color hover-bgcolor
+  & .Skills__item
+    background-color: hover-bgcolor
+  & .Skills__name
+    font-size 30px
+
+
+

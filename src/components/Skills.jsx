@@ -50,23 +50,23 @@ const Skills = (props) => {
       },
       {
         'name': 'React',
-        'percentage': '90',
+        'percentage': '3',
       },
       {
         'name': 'babbab',
-        'percentage': '75',
+        'percentage': '4',
       },
       {
         'name': 'CSS',
-        'percentage': '25',
+        'percentage': '1',
       },
       {
         'name': 'JavaScript',
-        'percentage': '55',
+        'percentage': '2.3',
       },
       {
         'name': 'React',
-        'percentage': '90',
+        'percentage': '5',
       },
     ],
   } = props;
@@ -76,6 +76,7 @@ const Skills = (props) => {
       <h1 className='Skills__title'>
         Skills
       </h1>
+      <hr />
       <div className='Skills__container'>
         {skills.map(item => (
           <section key={item.name} className='Skills__item'>
@@ -84,10 +85,9 @@ const Skills = (props) => {
                 {item.name}
               </div>
               <div className='Skills__percentage'>
-                {item.percentage}
+                <div className='Stars' style={{ '--rating': parseInt(item.percentage.split('%'), 10) }} />
               </div>
             </div>
-            <progress max='100' value={parseInt(item.percentage.split('%'), 10)} />
           </section>
         ))}
       </div>

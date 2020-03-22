@@ -30,9 +30,10 @@ const Academic = (props) => {
 
   return (
     <section className='Academic'>
-      <h1 className='Academic-title'>
+      <h1 className='Academic__title'>
         Academic
       </h1>
+      <hr />
       {academic.map((item, index) => (
         <section key={index} className='Academic__item'>
           <div className='Academic__info'>
@@ -42,7 +43,7 @@ const Academic = (props) => {
             <p className='Academic__dates'>
               {item.startDate}
               {' '}
-  -
+              -
               {' '}
               {item.startDate}
             </p>
@@ -57,7 +58,7 @@ const Academic = (props) => {
             <p className='Academic__location'>
               {item.startDate}
               {' '}
-                |
+              |
               {' '}
               {item.startDate}
             </p>
