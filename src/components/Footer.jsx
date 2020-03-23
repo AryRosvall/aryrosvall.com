@@ -1,25 +1,58 @@
 import React from 'react';
 import '../styles/components/Footer.styl';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { mdiChevronDoubleUp, mdiGithub } from '@mdi/js';
+import Icon, { Stack } from '@mdi/react';
 
-const Footer = () => {
+library.add(fab);
+
+const Footer = (props) => {
+
+  const {
+    Social = [
+      {
+        'name': 'twitter',
+        'url': 'https://twitter.com/',
+      },
+      {
+        'name': 'github',
+        'url': 'https://github.com/',
+      },
+      {
+        'name': 'linkedin',
+        'url': 'https://www.linkedin.com/',
+      },
+    ],
+  } = props;
+
   return (
     <footer>
-      <section className='footer__contact'>
-        <p>Get in touch!</p>
-        <form className='form'>
-          <input type='text' name='' id='' placeholder='name' />
-          <input type='email' name='' id='' placeholder='email' />
-          <textarea name='' id='' placeholder='message' rows='4' cols='50' />
-          <button type='submit'>
-          Send message
-          </button>
-        </form>
-      </section>
-      <section className='footer__social-media'>
-        <a href='/' className='social_media__item'><span className='flaticon-001-facebook'>Facebook</span></a>
-        <a href='/' className='social_media__item'><span className='flaticon-001-facebook'>Linkedin</span></a>
-        <a href='/' className='social_media__item'><span className='flaticon-001-facebook'>Twitter</span></a>
-      </section>
+      <div className='footer__up'>
+        <i dest='Home'>
+          <Stack size='50px'>
+            <Icon
+              path={mdiChevronDoubleUp}
+              color='white'
+              size='20px'
+              className='mdi-chevron-double-up'
+            />
+          </Stack>
+        </i>
+      </div>
+      <div className='social_media__container'>
+        {Social.map(item => (
+          <a className='Social__item' key={item.name} href={item.url}>
+            <FontAwesomeIcon className='Social__icon' key={item.url} icon={['fab', item.name]} />
+          </a>
+        ))}
+      </div>
+      <div className='footnote'>
+        ARANTXA ROSAS
+        {' '}
+        <span className='footnote--highlight'>©2020</span>
+      </div>
     </footer>
   );
 };

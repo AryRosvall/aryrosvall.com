@@ -7,7 +7,7 @@ import Academic from '../components/Academic';
 import Skills from '../components/Skills';
 import Projects from '../components/Projects';
 import Languages from '../components/Languages';
-import Social from '../components/Social';
+import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import getData from '../utils/getData';
 
@@ -44,8 +44,8 @@ const App = () => {
       <Skills skills={state.skills} />
       <Languages languages={state.languages} />
       <Projects interest={state.interest} />
-      <Social social={state.social} />
-      <Footer />
+      <Contact />
+      <Footer social={state.social} />
     </>
   );
 };

@@ -4,7 +4,7 @@ import '../styles/components/Hero.styl';
 const Hero = (props) => {
 
   return (
-    <section className='Hero'>
+    <section id='Home' className='Hero'>
       <div className='Hero__Container'>
         <h1>Arantxa Rosas del Valle</h1>
         <hr />

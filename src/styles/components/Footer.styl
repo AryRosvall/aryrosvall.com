@@ -1,73 +1,56 @@
 
-    footer {
-     display: grid;
-     grid-template-columns: 1fr 1fr;
-     grid-template-areas: "form media";
-     align-items: flex-start;
-     justify-items: center;
-     background-color: #1B1929;
+footer
+  background-color #1B242E
+  display flex
+  flex-flow column nowrap
+  justify-content center
+  align-items center
+  padding 70px 0 50px 0
+  position relative
 
-    }
+footer .footer__up svg
+  background-color #e31b6d
+  cursor pointer
+  font-size 30pt
+  height 50px
+  margin 0 auto
+  position absolute
+  left 0
+  right 0
+  top -25px
+  transition background 0.5s
+  width 47px
+  &:hover
+    background-color #fb1f79
 
-    .form {
-      grid-area: form;
-      text-align: center;
-      padding: 1.5em;
-      border-radius: 10px;
-    }
+footer .Social__item svg
+  font-size 20pt
+  left 0
+  line-height 40pt
+  margin 0 auto
+  right 0
+  top -25px
+  transition: background 0.5s
+  margin-right 30px
+  background-color #262F37
+  padding 15px
+  cursor pointer
+  &:hover
+    background #04c2c9
+    box-shadow 0 0 0 3px rgba(4, 94, 201, 0.1)
+    transform scale(0.9)
 
-    .form input {
-      width: 100%;
-      padding: 20px;
-      font-size: 16px;
-      border: none;
-      border-radius: 5px;
-      box-sizing: border-box;
-      margin-bottom: 10px;
-      background-color: #282736;
-      
-    }
+.social_media__container
+  margin-bottom 20px
 
-    .form input::placeholder{
-      color: white;
-      font-weight: 700;
-    }
+.footnote
+  color #8f9aa7
+  font-size 10pt
+  margin-top 35px
+  opacity 0.6
 
-     .form textarea {
-      width: 100%;
-      padding: 20px;
-      font-size: 16px;
-      border: none;
-      border-radius: 5px;
-      box-sizing: border-box;
-      margin-bottom: 10px;
-      background-color: #282736;
-      font-family: 'Montserrat', sans-serif;
-    }
+.footnote--highlight
+  color red
 
-    .form textarea::placeholder{
-      color: white;
-      font-weight: 700;
-    }
-
-    .form p {
-      font-size: 20px;
-      color: #3a3b3f;
-      margin-bottom: 1em;
-    }
-
-    .form button {
-      background: #93ca3f;
-      color: white;
-      padding: 15px;
-      border-radius: 2px;
-      border: none;
-      width: 100% ;
-      display: inline-block;
-      font-weight: 700;
-    }
-
-    .footer__social-media {
-      grid-area: media;
-      align-self: center;
-    }
+.Social__icon
+  color white
