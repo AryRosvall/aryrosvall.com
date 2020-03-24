@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import '../styles/components/App.styl';
+import '../assets/styles/components/App.styl';
 import Hero from '../components/Hero';
 import Profile from '../components/Profile';
+import About from '../components/About';
 import Experience from '../components/Experience';
 import Academic from '../components/Academic';
 import Skills from '../components/Skills';
 import Projects from '../components/Projects';
 import Languages from '../components/Languages';
 import Contact from '../components/Contact';
+import Menu from '../components/Menu';
 import Footer from '../components/Footer';
 import getData from '../utils/getData';
 
@@ -30,6 +32,7 @@ const App = () => {
   return (
     <>
       <Hero name={state.name} />
+      <Menu />
       <Profile
         avatar={state.avatar}
         name={state.name}
@@ -39,9 +42,10 @@ const App = () => {
         website={state.website}
         address={state.address}
       />
+      <About />
+      <Skills skills={state.skills} />
       <Experience experience={state.experience} />
       <Academic academic={state.Academic} />
-      <Skills skills={state.skills} />
       <Languages languages={state.languages} />
       <Projects interest={state.interest} />
       <Contact />

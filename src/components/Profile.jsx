@@ -1,11 +1,12 @@
 import React from 'react';
-import '../styles/components/Profile.styl';
+import '../assets/styles/components/Profile.styl';
 
 const Profile = (props) => {
 
   const {
     profession,
     profile,
+    img = 'https://i.imgur.com/33CtI2s.jpg',
   } = props;
 
   return (
@@ -18,10 +19,7 @@ const Profile = (props) => {
         </div>
         <div className='Profile__Description'>
           <figure>
-            <img
-              src='https://avatars1.githubusercontent.com/u/24699675?s=460&u=131dafb86c1a64b04f71f1a1b98d46ed73866d7f&v=4'
-              alt=''
-            />
+            <img src={img} alt='' />
           </figure>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, consequatur totam. Eius tenetur officia,

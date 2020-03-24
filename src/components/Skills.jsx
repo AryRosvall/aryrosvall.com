@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/components/Skills.styl';
+import '../assets/styles/components/Skills.styl';
 
 const Skills = (props) => {
   const {

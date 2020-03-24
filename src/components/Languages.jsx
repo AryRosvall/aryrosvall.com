@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/components/Language.styl';
+import '../assets/styles/components/Language.styl';
 
 const Languages = (props) => {
   const {
