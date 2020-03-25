@@ -2,6 +2,9 @@
   "name": "aryrosvall.com",
   "version": "1.0.0",
   "description": "My react portfolio",
+  "engines": {
+    "node": "12.16.x"
+  },
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
