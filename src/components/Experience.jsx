@@ -30,9 +30,9 @@ const Experience = (props) => {
       {
         '_id': '3',
         'jobTitle': 'Web Developer',
-        'company': 'BlueMessaging',
-        'startDate': 'Apr 2017',
-        'endDate': 'Present',
+        'company': 'Iké Asistencia',
+        'startDate': 'Jan 2017',
+        'endDate': 'May 2014',
         'jobDescription': 'Project management of software development. Requirements gathering and direct interaction with the customer. Design and development of software using Java Web, HTML, Javascript.',
         'location': 'Mexico City',
         'website': 'https://ikeasistencia.com',
@@ -40,7 +40,7 @@ const Experience = (props) => {
       {
         '_id': '4',
         'jobTitle': 'Web Developer',
-        'company': 'BlueMessaging',
+        'company': 'Loomtek',
         'startDate': '2012',
         'endDate': '2014',
         'jobDescription': 'Airlynk project. Development of ERP to manage both operational and governmental costs airport, for the 65 airports in Mexico and abroad. Logixpert project. Design and development of the website.VANAS project. Development of modules for the framework of eLearning for college "Vancouver Animation School" performing school management, publication of teaching materials and virtual classrooms, etc.',
