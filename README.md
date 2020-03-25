@@ -5,7 +5,7 @@ This is the code of my personal portfolio made with ♥️ in React JS.
 ## Install
 
 ```npm
-npm install aryrosvall.com
+npm install
 ```
 
 ## Run
