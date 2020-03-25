@@ -2,7 +2,7 @@
 
 .Languages
   margin auto
-  width 60%
+  width width-L
 
 .Languages__container
   padding-top 20px
@@ -44,3 +44,12 @@
   background-color hoverColor
   & .Languages__item
     background-color: hoverColor
+
+@media screen and (max-width 425px)
+  .Languages__container
+    display grid
+    grid-template-columns 100%
+  .Languages
+    width width-XS
+    text-align center
+    font-size font-sizeS

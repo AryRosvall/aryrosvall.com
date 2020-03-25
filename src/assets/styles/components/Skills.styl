@@ -2,7 +2,7 @@
 
 .Skills
   margin auto
-  width 60%
+  width width-L 
 
 .Skills__container
   padding-top 20px
@@ -45,5 +45,11 @@
   & .Skills__item
     background-color hoverColor
 
-
-
+@media screen and (max-width 425px)
+  .Skills__container
+    display grid
+    grid-template-columns 100%
+  .Skills
+    width width-XS
+    text-align center
+    font-size font-sizeS

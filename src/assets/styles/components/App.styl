@@ -6,7 +6,7 @@ body
   padding 0
   height 100%
   overflow-x hidden
-  font-size 15px
+  font-size font-sizeXS
 
 h1, h2
   padding 0
@@ -27,3 +27,11 @@ h3
 hr
   border-bottom 1px solid rgba(255,255,255,0.2)
   opacity 0.2
+
+@media screen and (max-width 425px)
+  h1
+    font-size h1-sizeXS
+
+@media screen and (max-width 425px)
+  body
+    font-size font-sizeS

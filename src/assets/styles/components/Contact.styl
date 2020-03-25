@@ -24,7 +24,7 @@
   text-align center
   padding 1.5em
   border-radius 10px
-  width 500px
+  width 50%
 
 .form input, .form textarea
   width 100%
@@ -47,3 +47,11 @@
   border none
   width 100%
   display inline-block
+
+@media screen and (max-width 768px)
+  .form
+    width 70%
+
+@media screen and (min-width 425px)
+  .form
+    width 90%

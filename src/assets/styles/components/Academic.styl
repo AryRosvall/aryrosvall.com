@@ -2,7 +2,7 @@
 
 .Academic
   margin auto
-  width 60%
+  width width-L
 
 .Academic__item
   display grid
@@ -12,3 +12,15 @@
 .Academic__institution, .Academic__degree
   font-weight bold
   font-size 18px
+
+@media screen and (max-width 425px)
+  .Academic
+    width width-XS
+    font-size font-sizeS
+  .Academic__item
+    display grid
+    grid-template-columns 100%
+    padding-top 20px
+  .Academic__info
+    display grid
+    grid-template-columns repeat(2, 1fr)

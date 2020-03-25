@@ -9,6 +9,10 @@ const Languages = (props) => {
         'percentage': '5',
       },
       {
+        'name': 'Otro',
+        'percentage': '4.5',
+      },
+      {
         'name': 'Portuguese',
         'percentage': '1',
       },
