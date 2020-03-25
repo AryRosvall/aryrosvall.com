@@ -3,91 +3,41 @@ import '../assets/styles/components/Projects.styl';
 
 const Projects = (props) => {
 
+  const {
+    projects = [
+      {
+        '_id': '1',
+        'cover': 'https://i.imgur.com/juA2KWr.png',
+        'title': 'Xiinbal',
+        'description': '',
+      },
+      {
+        '_id': '2',
+        'cover': 'https://i.imgur.com/Mlh3qRo.png',
+        'title': 'Burger Queen',
+        'description': '',
+      },
+    ],
+  } = props;
+
   return (
     <section className='portfolio'>
       <h1>My recent work</h1>
       <hr />
       <section className='portfolio__container'>
-        <a href='/' className='porfolio__item'>
-          <figure className='porfolio__item-image'>
-            <img src='https://s.imgur.com/images/logo-1200-630.jpg?2' alt='' />
-          </figure>
-          <div className='porfolio__item-overlay'>
-            <span className='portfolio__item-title'>Lorem Ipsum</span>
+        {
+          projects.map(project => (
 
-          </div>
-        </a>
-        <a href='/' className='porfolio__item'>
-          <figure className='porfolio__item-image'>
-            <img src='https://s.imgur.com/images/logo-1200-630.jpg?2' alt='' />
-          </figure>
-          <div className='porfolio__item-overlay'>
-            <span className='portfolio__item-title'>Lorem Ipsum</span>
-
-          </div>
-        </a>
-        <a href='/' className='porfolio__item'>
-          <figure className='porfolio__item-image'>
-            <img src='https://s.imgur.com/images/logo-1200-630.jpg?2' alt='' />
-          </figure>
-          <div className='porfolio__item-overlay'>
-            <span className='portfolio__item-title'>Lorem Ipsum</span>
-          </div>
-        </a>
-        <a href='/' className='porfolio__item'>
-          <figure className='porfolio__item-image'>
-            <img src='https://s.imgur.com/images/logo-1200-630.jpg?2' alt='' />
-          </figure>
-          <div className='porfolio__item-overlay'>
-            <span className='portfolio__item-title'>Lorem Ipsum</span>
-
-          </div>
-        </a>
-        <a href='/' className='porfolio__item'>
-          <figure className='porfolio__item-image'>
-            <img src='https://s.imgur.com/images/logo-1200-630.jpg?2' alt='' />
-          </figure>
-          <div className='porfolio__item-overlay'>
-            <span className='portfolio__item-title'>Lorem Ipsum</span>
-
-          </div>
-        </a>
-        <a href='/' className='porfolio__item'>
-          <figure className='porfolio__item-image'>
-            <img src='https://s.imgur.com/images/logo-1200-630.jpg?2' alt='' />
-          </figure>
-          <div className='porfolio__item-overlay'>
-            <span className='portfolio__item-title'>Lorem Ipsum</span>
-
-          </div>
-        </a>
-        <a href='/' className='porfolio__item'>
-          <figure className='porfolio__item-image'>
-            <img src='https://s.imgur.com/images/logo-1200-630.jpg?2' alt='' />
-          </figure>
-          <div className='porfolio__item-overlay'>
-            <span className='portfolio__item-title'>Lorem Ipsum</span>
-
-          </div>
-        </a>
-        <a href='/' className='porfolio__item'>
-          <figure className='porfolio__item-image'>
-            <img src='https://s.imgur.com/images/logo-1200-630.jpg?2' alt='' />
-          </figure>
-          <div className='porfolio__item-overlay'>
-            <span className='portfolio__item-title'>Lorem Ipsum</span>
-
-          </div>
-        </a>
-        <a href='/' className='porfolio__item'>
-          <figure className='porfolio__item-image'>
-            <img src='https://s.imgur.com/images/logo-1200-630.jpg?2' alt='' />
-          </figure>
-          <div className='porfolio__item-overlay'>
-            <span className='portfolio__item-title'>Lorem Ipsum</span>
-
-          </div>
-        </a>
+            <div className='porfolio__item'>
+              <figure className='porfolio__item-image'>
+                <img src={project.cover} alt='' />
+              </figure>
+              <div className='porfolio__item-overlay'>
+                <span className='portfolio__item-title'>{project.title}</span>
+              </div>
+            </div>
+          ))
+        }
       </section>
     </section>
   );

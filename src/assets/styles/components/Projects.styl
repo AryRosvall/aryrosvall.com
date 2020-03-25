@@ -6,11 +6,11 @@
 
 .portfolio__container
     display grid
-    grid-template-columns repeat(3, minmax(100px, 293px))
+    grid-template-columns repeat(2, minmax(300px, 500px))
     justify-content center
     grid-gap 28px
     margin 20px 15px
-    padding 30px
+
 
 .porfolio__item
     cursor pointer
@@ -21,7 +21,8 @@
     margin 0
     & img
         width 100%
-        vertical-align top
+        height 100%
+        object-fit cover
 
 .porfolio__item-overlay
     background rgba(0,0,0, .4)
@@ -46,3 +47,10 @@
     text-align center
     display inline-block
 
+@media screen and (max-width 768px)
+    .portfolio__container
+        display grid
+        grid-template-columns 100%
+
+
+/* @media screen and (max-width 425px) */

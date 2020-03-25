@@ -4,8 +4,7 @@ import '../assets/styles/components/Profile.styl';
 const Profile = (props) => {
 
   const {
-    profession,
-    profile,
+    profile = 'I am a professional passionate about technology, with experience in the development and management of products and projects of web and mobile technologies.',
     img = 'https://i.imgur.com/33CtI2s.jpg',
   } = props;
 
@@ -22,10 +21,7 @@ const Profile = (props) => {
             <img src={img} alt='' />
           </figure>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, consequatur totam. Eius tenetur officia,
-            necessitatibus modi perspiciatis doloribus, aspernatur voluptate natus fugiat laboriosam, aperiam blanditiis
-            dignissimos et. Vel, aliquam eos.
-            I am an allround web developer. I am a senior programmer with good knowledge of front-end techniques. I love structure and order and I also stand for quality. I love spending time on fixing little details and optimizing web apps. Also I like working in a team, you'll learn faster and much more. As the saying goes: 'two heads are better than one'.
+            {profile}
           </p>
         </div>
 
