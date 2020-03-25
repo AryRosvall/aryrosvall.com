@@ -12,3 +12,33 @@
 .Experience__company, .Experience__job-title
   font-weight bold
   font-size font-size
+
+.Experience__location a
+  text-decoration none
+  color dark
+
+.Experience__location div
+  margin 20px
+
+@media screen and (max-width 425px)
+  .Experience
+    width width-XS
+    font-size font-sizeXS
+  .Experience__item
+    display grid
+    grid-template-columns 100%
+    padding-top 20px
+    & p
+      margin 2px 0
+  .Experience__info
+    display grid
+    grid-template-rows repeat(2, 1fr)
+    padding-bottom 15px
+    text-align left
+  .Experience__job-description
+    display none
+  .Experience__location div
+    margin 10px 0 20px 15px
+    & :nth-child(1)
+      padding-right 15px
+      color highlightColor2

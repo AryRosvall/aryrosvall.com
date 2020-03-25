@@ -56,7 +56,7 @@ const Academic = (props) => {
               {item.description}
             </p>
             <p className='Academic__location'>
-              {item.startDate}
+              image location
               {' '}
               |
               {' '}
