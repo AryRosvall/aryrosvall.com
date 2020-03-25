@@ -1,7 +1,7 @@
 {
-  "name": "project-react-01",
+  "name": "aryrosvall.com",
   "version": "1.0.0",
-  "description": "Project React 01",
+  "description": "My react portfolio",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
@@ -15,7 +15,7 @@
     "react",
     "webpack"
   ],
-  "author": "Oscar Barajas <oscar@platzi.com>",
+  "author": "Arantxa Rosas <ary.rosvall@gmail.com",
   "license": "MIT",
   "dependencies": {
     "@babel/core": "^7.8.4",

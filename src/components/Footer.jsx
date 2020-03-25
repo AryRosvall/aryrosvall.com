@@ -14,15 +14,15 @@ const Footer = (props) => {
     Social = [
       {
         'name': 'twitter',
-        'url': 'https://twitter.com/',
+        'url': 'https://twitter.com/AryRosvall',
       },
       {
         'name': 'github',
-        'url': 'https://github.com/',
+        'url': 'https://github.com/AryRosvall',
       },
       {
         'name': 'linkedin',
-        'url': 'https://www.linkedin.com/',
+        'url': 'https://www.linkedin.com/in/arantxarosas',
       },
     ],
   } = props;
@@ -43,13 +43,17 @@ const Footer = (props) => {
       </div>
       <div className='social_media__container'>
         {Social.map(item => (
-          <a className='Social__item' key={item.name} href={item.url}>
+          <a className='Social__item' key={item.name} href={item.url} target='_blank' rel='noopener noreferrer'>
             <FontAwesomeIcon className='Social__icon' key={item.url} icon={['fab', item.name]} />
           </a>
         ))}
       </div>
       <div className='footnote'>
-        ARANTXA ROSAS
+        Made with
+        {' '}
+        <span>♥️</span>
+        {' '}
+        by @AryRosvall
         {' '}
         <span className='footnote--highlight'>©2020</span>
       </div>
