@@ -12,26 +12,33 @@ const Hero = (props) => {
       {/* <Particles params={params} className='Particles' /> */}
 
       <div className='Hero__Container'>
-        <div className='Hi'>
+        <div className='Hero__Name'>
           <TextyAnim
             type='alpha'
             mode='random'
             className=''
           >
-            Hi! I'm Arantxa Rosas
+            Hi! I'm &nbsp;
           </TextyAnim>
-        </div>
-        <div className='Name'>
           <TextyAnim
             type='alpha'
             mode='random'
-            className='Hero__h2'
+            className='highlight'
+          >
+            Arantxa Rosas
+          </TextyAnim>
+        </div>
+        <div className='Hero__Title'>
+          <TextyAnim
+            type='alpha'
+            mode='random'
+            className=''
           >
             a full stack web developer
           </TextyAnim>
-          <div>
-            <button>Check out my work!</button>
-          </div>
+        </div>
+        <div>
+          <button>Check out my work!</button>
         </div>
       </div>
     </section>

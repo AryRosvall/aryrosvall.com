@@ -2,22 +2,21 @@
 
 .Contact
   display grid
-  background-color #252934
+  background-color semiDark
   grid-template-areas "svg"\
                       "form"
   & h1
-    color white
+    color baseColor
 
 .Contact__deco
   grid-area svg
-  background-color #252934
-
+  background-color semiDark
 
 .Contact__form
   padding 10px 0 100px 0
-  background-color #252934
-  margin: auto;
-  width: 80%;
+  background-color semiDark
+  margin auto
+  width 80%
 
 .form
   grid-area form
@@ -27,7 +26,7 @@
   border-radius 10px
   width 500px
 
-.form input
+.form input, .form textarea
   width 100%
   padding 20px
   font-size 16px
@@ -35,38 +34,16 @@
   border-radius 5px
   box-sizing border-box
   margin-bottom 10px
-  background-color #1e242c
+  background-color dark
 
-.form input::placeholder
-  color white
-  font-weight 700
-
-.form textarea
-  width 100%
-  padding 20px
-  font-size 16px
-  border none
-  border-radius 5px
-  box-sizing border-box
-  margin-bottom 10px
-  background-color #1e242c
-  font-family 'Montserrat', sans-serif
-
-.form textarea::placeholder
-  color white
-  font-weight 700
-
-.form p
-  font-size 20px
-  color #3a3b3f
-  margin-bottom 1em
+.form input::placeholder, .form textarea::placeholder
+  color baseColor
 
 .form button
   background #93ca3f
-  color white
+  color baseColor
   padding 15px
   border-radius 2px
   border none
   width 100%
   display inline-block
-  font-weight 700

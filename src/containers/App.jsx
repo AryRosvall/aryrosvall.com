@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import '../assets/styles/components/App.styl';
 import Hero from '../components/Hero';
 import Profile from '../components/Profile';
-import About from '../components/About';
 import Experience from '../components/Experience';
 import Academic from '../components/Academic';
 import Skills from '../components/Skills';
@@ -42,7 +41,6 @@ const App = () => {
         website={state.website}
         address={state.address}
       />
-      <About />
       <Skills skills={state.skills} />
       <Experience experience={state.experience} />
       <Academic academic={state.Academic} />

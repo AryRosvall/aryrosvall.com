@@ -1,18 +1,16 @@
 @import "../vars.styl"
 
 .Menu
-    display flex
-    align-items center
-    justify-content space-around
-    background-color #252934
-    color white
-    text-transform uppercase
-    border-bottom 4px solid #93ca3f
-
-.Menu__job-title
-    font-size 25px
-    font-weight bold
-    margin-top 5px
+  display flex
+  align-items center
+  justify-content space-around
+  background-color semiDark
+  color baseColor
+  text-transform uppercase
+  border-bottom 4px solid highlightColor2
 
 .Menu-item
-    margin-left 5px
+  margin-left 5px
+  &:hover
+    color highlightColor1
+    transition color 0.6s

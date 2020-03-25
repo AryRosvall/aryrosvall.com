@@ -1,6 +1,7 @@
+@import "../vars.styl"
 
 footer
-  background-color #080F19
+  background-color dark
   display flex
   flex-flow column nowrap
   justify-content center
@@ -9,7 +10,7 @@ footer
   position relative
 
 footer .footer__up svg
-  background-color #e31b6d
+  background-color highlightColor1
   cursor pointer
   font-size 30pt
   height 50px
@@ -21,7 +22,7 @@ footer .footer__up svg
   transition background 0.5s
   width 47px
   &:hover
-    background-color #fb1f79
+    background-color hoverButton2
 
 footer .Social__item svg
   font-size 20pt
@@ -32,11 +33,11 @@ footer .Social__item svg
   top -25px
   transition: background 0.5s
   margin-right 30px
-  background-color #262F37
+  background-color semiDark
   padding 15px
   cursor pointer
   &:hover
-    background #04c2c9
+    background highlightColor2
     box-shadow 0 0 0 3px rgba(4, 94, 201, 0.1)
     transform scale(0.9)
 
@@ -44,13 +45,13 @@ footer .Social__item svg
   margin-bottom 20px
 
 .footnote
-  color #8f9aa7
+  color baseColor
   font-size 10pt
   margin-top 35px
   opacity 0.6
 
 .footnote--highlight
-  color red
+  color highlightColor1
 
 .Social__icon
-  color white
+  color baseColor
