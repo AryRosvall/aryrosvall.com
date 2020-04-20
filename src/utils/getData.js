@@ -1,6 +1,11 @@
 const getData = (url) => {
   const data = fetch(url)
-    .then(response => response.json())
+    .then((res) => {
+      if (res.ok) {
+        return res.json();
+      }
+      return Promise.reject(res.status);
+    })
     .then(json => json)
     .catch(e => e);
 
@@ -8,4 +13,3 @@ const getData = (url) => {
 };
 
 export default getData;
-
