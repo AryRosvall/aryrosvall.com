@@ -14,6 +14,7 @@ export function getState(_URL) {
 };
 
 export function getInitialState() {
+  console.log(config);
 
   const PROFILE_URL = `${config.apiUrl}api/profile`;
 
