@@ -4,14 +4,10 @@ import '../assets/styles/components/Hero.styl';
 
 const Hero = (props) => {
 
-  const {
-    hero = {
-      name: 'Arantxa Rosas',
-      title: 'a full stack web developer',
-    },
-  } = props;
+  const { name, heroTitle } = props;
 
-  return (
+  return props ? (
+
     <section id='Home' className='Hero'>
       <div className='Hero__Container'>
         <div className='Hero__Name'>
@@ -27,7 +23,7 @@ const Hero = (props) => {
             mode='random'
             className='highlight'
           >
-            {hero.name}
+            {name}
           </TextyAnim>
         </div>
         <div className='Hero__Title'>
@@ -36,7 +32,7 @@ const Hero = (props) => {
             mode='random'
             className=''
           >
-            {hero.title}
+            {heroTitle}
           </TextyAnim>
         </div>
         <div>
@@ -44,7 +40,7 @@ const Hero = (props) => {
         </div>
       </div>
     </section>
-  );
+  ) : null;
 };
 
 export default Hero;

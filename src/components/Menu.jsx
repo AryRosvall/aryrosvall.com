@@ -1,7 +1,5 @@
 import React from 'react';
 import '../assets/styles/components/Menu.styl';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const Menu = (props) => {
 
@@ -9,7 +7,7 @@ const Menu = (props) => {
     menus = ['About Me', 'Skills', 'Experience', 'Academic', 'Portfolio', 'Contact'],
   } = props;
 
-  return (
+  return menus ? (
     <nav className='Menu'>
       <div id='menuToogle'>
         <input type='checkbox' id='check' />
@@ -18,8 +16,8 @@ const Menu = (props) => {
         <span />
         <ul className='menu1'>
           {
-            menus.map(menu => (
-              <a href='/'>
+            menus.map((menu, index) => (
+              <a key={index} href='/'>
                 <li className='Menu-item'>
                   {menu}
                 </li>
@@ -28,22 +26,8 @@ const Menu = (props) => {
           }
         </ul>
       </div>
-      {/*    <FontAwesomeIcon icon={faBars} /> */}
     </nav>
-  );
-
-  /* return (
-    <section className='Menu'>
-      <FontAwesomeIcon icon={faBars} />
-      {
-        menus.map(menu => (
-          <p className='Menu-item'>
-            {menu}
-          </p>
-        ))
-      }
-    </section>
-  ); */
+  ) : null;
 };
 
 export default Menu;

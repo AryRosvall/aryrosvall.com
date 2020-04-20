@@ -3,7 +3,7 @@ import '../assets/styles/components/Footer.styl';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
-import { mdiChevronDoubleUp, mdiGithub } from '@mdi/js';
+import { mdiChevronDoubleUp } from '@mdi/js';
 import Icon, { Stack } from '@mdi/react';
 
 library.add(fab);
@@ -51,7 +51,7 @@ const Footer = (props) => {
       <div className='footnote'>
         Made with
         {' '}
-        <span>♥️</span>
+        <span role='img' aria-label=''>♥️</span>
         {' '}
         by @AryRosvall
         {' '}

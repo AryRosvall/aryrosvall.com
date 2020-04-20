@@ -2,76 +2,10 @@ import React from 'react';
 import '../assets/styles/components/Skills.styl';
 
 const Skills = (props) => {
-  const {
-    skills = [
-      {
-        'name': 'babbab',
-        'percentage': '75',
-      },
-      {
-        'name': 'CSS',
-        'percentage': '25',
-      },
-      {
-        'name': 'JavaScript',
-        'percentage': '55',
-      },
-      {
-        'name': 'React',
-        'percentage': '90',
-      },
-      {
-        'name': 'babbab',
-        'percentage': '75',
-      },
-      {
-        'name': 'CSS',
-        'percentage': '25',
-      },
-      {
-        'name': 'JavaScript',
-        'percentage': '55',
-      },
-      {
-        'name': 'React',
-        'percentage': '90',
-      },
-      {
-        'name': 'babbab',
-        'percentage': '75',
-      },
-      {
-        'name': 'CSS',
-        'percentage': '25',
-      },
-      {
-        'name': 'JavaScript',
-        'percentage': '55',
-      },
-      {
-        'name': 'React',
-        'percentage': '3',
-      },
-      {
-        'name': 'babbab',
-        'percentage': '4',
-      },
-      {
-        'name': 'CSS',
-        'percentage': '1',
-      },
-      {
-        'name': 'JavaScript',
-        'percentage': '2.3',
-      },
-      {
-        'name': 'React',
-        'percentage': '5',
-      },
-    ],
-  } = props;
 
-  return (
+  const { skills } = props;
+
+  return props ? (
     <section className='Skills'>
       <h1 className='Skills__title'>
         Skills
@@ -92,7 +26,7 @@ const Skills = (props) => {
         ))}
       </div>
     </section>
-  );
+  ) : 'Loading...';
 };
 
 export default Skills;

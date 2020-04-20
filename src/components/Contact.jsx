@@ -14,9 +14,9 @@ const Contact = () => {
         <h1>Get in touch!</h1>
         <hr />
         <form className='form'>
-          <input type='text' name='' id='' placeholder='name' />
-          <input type='email' name='' id='' placeholder='email' />
-          <textarea name='' id='' placeholder='message' rows='4' cols='50' />
+          <input type='text' name='' id='text' placeholder='name' />
+          <input type='email' name='' id='email' placeholder='email' />
+          <textarea name='' id='textarea' placeholder='message' rows='4' cols='50' />
           <button type='submit'>Send message</button>
         </form>
       </section>
