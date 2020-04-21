@@ -13,10 +13,11 @@ export function getState(_URL) {
   return state;
 };
 
-export function getInitialState() {
-  console.log(config);
+const API_URL = config.apiUrl || 'https://a3a5e0cf.ngrok.io/';
 
-  const PROFILE_URL = `${config.apiUrl}api/profile`;
+export function getInitialState() {
+
+  const PROFILE_URL = `${API_URL}api/profile`;
 
   const profileData = getState(PROFILE_URL);
 
@@ -26,23 +27,23 @@ export function getInitialState() {
     profile = prop;
   });
 
-  const SKILLS_URL = `${config.apiUrl}api/skill`;
+  const SKILLS_URL = `${API_URL}api/skill`;
 
   const skills = getState(SKILLS_URL);
 
-  const EXPERIENCE_URL = `${config.apiUrl}api/experience`;
+  const EXPERIENCE_URL = `${API_URL}api/experience`;
 
   const experiences = getState(EXPERIENCE_URL);
 
-  const ACADEMIC_URL = `${config.apiUrl}api/academic`;
+  const ACADEMIC_URL = `${API_URL}api/academic`;
 
   const academic = getState(ACADEMIC_URL);
 
-  const LANGUAGE_URL = `${config.apiUrl}api/language`;
+  const LANGUAGE_URL = `${API_URL}api/language`;
 
   const languages = getState(LANGUAGE_URL);
 
-  const PROJECT_URL = `${config.apiUrl}api/project`;
+  const PROJECT_URL = `${API_URL}api/project`;
 
   const projects = getState(PROJECT_URL);
 
