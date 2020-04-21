@@ -30,16 +30,18 @@ const Footer = (props) => {
   return (
     <footer id='Contact'>
       <div className='footer__up'>
-        <i dest='Home'>
-          <Stack size='50px'>
-            <Icon
-              path={mdiChevronDoubleUp}
-              color='white'
-              size='20px'
-              className='mdi-chevron-double-up'
-            />
-          </Stack>
-        </i>
+        <a href='#Home'>
+          <i dest='#Home'>
+            <Stack size='50px'>
+              <Icon
+                path={mdiChevronDoubleUp}
+                color='white'
+                size='20px'
+                className='mdi-chevron-double-up'
+              />
+            </Stack>
+          </i>
+        </a>
       </div>
       <div className='social_media__container'>
         {Social.map(item => (
