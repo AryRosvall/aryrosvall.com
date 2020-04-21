@@ -1,11 +1,23 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import '../assets/styles/components/Menu.styl';
 
 const Menu = (props) => {
 
-  /* const {
-    menus = ['About Me', 'Skills', 'Experience', 'Academic', 'Portfolio', 'Contact'],
-  } = props; */
+  const [isSticky, setSticky] = useState(false);
+  const ref = useRef(null);
+  const handleScroll = () => {
+    if (ref.current) {
+      setSticky(ref.current.getBoundingClientRect().top <= 0);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', () => handleScroll);
+    };
+  }, []);
 
   const {
     menus = [
@@ -19,25 +31,27 @@ const Menu = (props) => {
   } = props;
 
   return menus ? (
-    <nav className='Menu'>
-      <div id='menuToogle'>
-        <input type='checkbox' id='check' />
-        <span />
-        <span />
-        <span />
-        <ul className='menu1'>
-          {
-            menus.map((menu, index) => (
-              <a key={menu.name} href={`#${menu.link}`}>
-                <li className='Menu-item'>
-                  {menu.name}
-                </li>
-              </a>
-            ))
-          }
-        </ul>
-      </div>
-    </nav>
+    <div className={`sticky__container${isSticky ? ' sticky' : ''}`} ref={ref}>
+      <nav className='Menu sticky__inner'>
+        <div id='menuToogle'>
+          <input type='checkbox' id='check' />
+          <span />
+          <span />
+          <span />
+          <ul className='menu__options'>
+            {
+              menus.map((menu, index) => (
+                <a key={menu.name} href={`#${menu.link}`}>
+                  <li className='Menu__option'>
+                    {menu.name}
+                  </li>
+                </a>
+              ))
+            }
+          </ul>
+        </div>
+      </nav>
+    </div>
   ) : null;
 };
 

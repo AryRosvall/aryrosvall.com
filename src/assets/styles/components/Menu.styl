@@ -10,7 +10,7 @@
 #check
   display none
 
-.menu1
+.menu__options
   margin 0
   display flex
   align-items center
@@ -18,7 +18,7 @@
   & a
     text-decoration none
 
-.Menu-item
+.Menu__option
   margin-left 5px
   list-style-type none
   color baseColor
@@ -27,7 +27,15 @@
     color highlightColor1
     transition color 0.6s
 
+.sticky__wrapper
+  position relative
 
+.sticky .sticky__inner
+  position fixed
+  top 0
+  left 0
+  right 0
+  z-index 1
 
 @media screen and (max-width 768px)
 
@@ -86,7 +94,7 @@
     & ~ span:nth-last-child(2)
       transform rotate(-45deg) translate(0, -1px)
 
-  .menu1
+  .menu__options
     position: relative;
     display none
     width: 300px
@@ -101,7 +109,7 @@
     transform none
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 
-  .menu1 li
+  .menu__options li
     padding: 10px 0;
     font-size: 22px;
 
