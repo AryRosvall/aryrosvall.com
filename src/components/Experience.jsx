@@ -5,58 +5,15 @@ import { faMapMarkerAlt, faGlobeAmericas } from '@fortawesome/free-solid-svg-ico
 
 const Experience = (props) => {
 
-  const {
-    experience = [
-      {
-        '_id': '1',
-        'jobTitle': 'Operations Manager',
-        'company': 'BlueMessaging',
-        'startDate': 'Apr 2017',
-        'endDate': 'Present',
-        'jobDescription': 'I\'m Responsible for generating customer engagement with the business, creating added value to the customer and translate the needs of the client and users into business opportunities and improvement for the business and its stakeholders.',
-        'location': 'Mexico City',
-        'website': 'https://www.bluemessaging.com',
-      },
-      {
-        '_id': '2',
-        'jobTitle': 'Project Leader',
-        'company': 'Iké Asistencia',
-        'startDate': 'Jan 2017',
-        'endDate': 'Apr 2017',
-        'jobDescription': 'Develop and management of web application projects. Stakeholder and project sponsors management Estimation of time, risk management and resources. Staff of 6 employees.',
-        'location': 'Mexico City',
-        'website': 'https://ikeasistencia.com',
-      },
-      {
-        '_id': '3',
-        'jobTitle': 'Web Developer',
-        'company': 'Iké Asistencia',
-        'startDate': 'Jan 2017',
-        'endDate': 'May 2014',
-        'jobDescription': 'Project management of software development. Requirements gathering and direct interaction with the customer. Design and development of software using Java Web, HTML, Javascript.',
-        'location': 'Mexico City',
-        'website': 'https://ikeasistencia.com',
-      },
-      {
-        '_id': '4',
-        'jobTitle': 'Web Developer',
-        'company': 'Loomtek',
-        'startDate': '2012',
-        'endDate': '2014',
-        'jobDescription': 'Airlynk project. Development of ERP to manage both operational and governmental costs airport, for the 65 airports in Mexico and abroad. Logixpert project. Design and development of the website.VANAS project. Development of modules for the framework of eLearning for college "Vancouver Animation School" performing school management, publication of teaching materials and virtual classrooms, etc.',
-        'location': 'Mexico City',
-        'website': 'http://www.loomtek.com.mx',
-      },
-    ],
-  } = props;
+  const { experience } = props;
 
   return (
-    <section className='Experience'>
+    <section id='Experience' className='Experience'>
       <div className='Experience__title'>
         <h1>Experience</h1>
         <hr />
       </div>
-      {experience.map((item, index) => (
+      {experience.map(item => (
         <section key={item._id} className='Experience__item'>
           <div className='Experience__info'>
             <p className='Experience__company'>

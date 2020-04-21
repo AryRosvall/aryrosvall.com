@@ -28,7 +28,7 @@ const Footer = (props) => {
   } = props;
 
   return (
-    <footer>
+    <footer id='Contact'>
       <div className='footer__up'>
         <i dest='Home'>
           <Stack size='50px'>

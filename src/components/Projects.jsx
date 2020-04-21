@@ -6,7 +6,7 @@ const Projects = (props) => {
   const { projects } = props;
 
   return projects ? (
-    <section className='portfolio'>
+    <section id='Projects' className='portfolio'>
       <h1>My recent work</h1>
       <hr />
       <section className='portfolio__container'>

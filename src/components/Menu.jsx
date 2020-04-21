@@ -3,8 +3,19 @@ import '../assets/styles/components/Menu.styl';
 
 const Menu = (props) => {
 
-  const {
+  /* const {
     menus = ['About Me', 'Skills', 'Experience', 'Academic', 'Portfolio', 'Contact'],
+  } = props; */
+
+  const {
+    menus = [
+      { name: 'About Me', link: 'Profile' },
+      { name: 'Skills', link: 'Skills' },
+      { name: 'Experience', link: 'Experience' },
+      { name: 'Academic', link: 'Academic' },
+      { name: 'Portfolio', link: 'Projects' },
+      { name: 'Contact', link: 'Contact' },
+    ],
   } = props;
 
   return menus ? (
@@ -17,9 +28,9 @@ const Menu = (props) => {
         <ul className='menu1'>
           {
             menus.map((menu, index) => (
-              <a key={index} href='/'>
+              <a key={menu.name} href={`#${menu.link}`}>
                 <li className='Menu-item'>
-                  {menu}
+                  {menu.name}
                 </li>
               </a>
             ))

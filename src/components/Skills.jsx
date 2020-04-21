@@ -6,7 +6,7 @@ const Skills = (props) => {
   const { skills } = props;
 
   return props ? (
-    <section className='Skills'>
+    <section id='Skills' className='Skills'>
       <h1 className='Skills__title'>
         Skills
       </h1>

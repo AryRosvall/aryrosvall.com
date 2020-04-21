@@ -6,7 +6,7 @@ const Profile = (props) => {
   const { profileTitle, avatar, description } = props;
 
   return (
-    <section className='Profile'>
+    <section id='Profile' className='Profile'>
       <div className='Profile__Container'>
         <div className='Profile__Title'>
           <h1>About Me</h1>

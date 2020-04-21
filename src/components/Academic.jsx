@@ -7,7 +7,7 @@ const Academic = (props) => {
   const { academic } = props;
 
   return academic ? (
-    <section className='Academic'>
+    <section id='Academic' className='Academic'>
       <h1 className='Academic__title'>
         Academic
       </h1>
