@@ -25,7 +25,7 @@ const Menu = (props) => {
       { name: 'Skills', link: 'Skills' },
       { name: 'Experience', link: 'Experience' },
       { name: 'Academic', link: 'Academic' },
-      { name: 'Portfolio', link: 'Projects' },
+      { name: 'Portfolio', link: 'Portfolio' },
       { name: 'Contact', link: 'Contact' },
     ],
   } = props;

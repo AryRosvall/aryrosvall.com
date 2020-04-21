@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import '../assets/styles/components/App.styl';
 import Hero from '../components/Hero';
 import Profile from '../components/Profile';
@@ -32,7 +32,7 @@ const App = () => {
       <Experience experience={experiences} />
       <Academic academic={academic} />
       <Languages languages={languages} />
-      <Projects interest={projects} />
+      <Projects projects={projects} />
       <Contact />
       <Footer />
     </>

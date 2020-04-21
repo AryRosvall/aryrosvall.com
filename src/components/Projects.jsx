@@ -6,13 +6,13 @@ const Projects = (props) => {
   const { projects } = props;
 
   return projects ? (
-    <section id='Projects' className='portfolio'>
+    <section id='Portfolio' className='portfolio'>
       <h1>My recent work</h1>
       <hr />
       <section className='portfolio__container'>
         {
           projects.map(project => (
-            <div key={project._id} ssclassName='porfolio__item'>
+            <div key={project._id} className='porfolio__item'>
               <figure className='porfolio__item-image'>
                 <img src={project.cover} alt='' />
               </figure>
