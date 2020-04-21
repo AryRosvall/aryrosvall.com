@@ -36,7 +36,7 @@ const Hero = (props) => {
           </TextyAnim>
         </div>
         <div>
-          <button type='button'>Check out my work!</button>
+          <a href='#Profile'>Check out my work!</a>
         </div>
       </div>
     </section>
