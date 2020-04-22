@@ -1,19 +1,10 @@
 const path = require('path');
 const webpack = require('webpack');
-const dotenv = require('dotenv');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = () => {
 
-  /*   const env = dotenv.config().parsed;
-  console.log('env', env);
-
-  const envKeys = Object.keys(env).reduce((prev, next) => {
-    prev[`process.env.${next}`] = JSON.stringify(env[next]);
-    return prev;
-  }, {});
- */
   return {
     node: { fs: 'empty' },
     entry: './src/index.js',
@@ -73,7 +64,9 @@ module.exports = () => {
       new MiniCssExtractPlugin({
         filename: 'assets/[name].css',
       }),
-      /*    new webpack.DefinePlugin(envKeys), */
+      new webpack.DefinePlugin({
+        'process.env.API_URL': JSON.stringify('https://5d2e5ce6.ngrok.io/'),
+      }),
     ],
   };
 };

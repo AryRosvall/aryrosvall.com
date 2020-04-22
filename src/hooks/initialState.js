@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import getData from '../utils/getData';
+import { getData } from '../utils/fetchData';
 import config from '../../config';
 
 export function getState(_URL) {
@@ -13,7 +13,7 @@ export function getState(_URL) {
   return state;
 };
 
-const API_URL = config.apiUrl || 'https://a3a5e0cf.ngrok.io/';
+export const API_URL = config.apiUrl;
 
 export function getInitialState() {
 
