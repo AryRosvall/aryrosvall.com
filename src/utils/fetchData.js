@@ -14,18 +14,17 @@ export const getData = (url) => {
 };
 
 export const sendData = async (url, method, data) => {
-  console.log('sendData -> data', data);
-  console.log('sendData -> url', url);
+
   try {
     const response = await fetch(url, {
       method,
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data),
     });
-    console.log('sendData -> response', response);
+    return response;
 
   } catch (e) {
-    console.log('sendData -> e', e);
+    return e;
 
   }
 };
@@ -41,13 +40,11 @@ export const sendMessage = async (url, method, data) => {
       'to': 'ary.rosvall@gmail.com',
       'subject': subject,
     };
-    console.log('sendMessage -> email', email);
 
     const response = await sendData(url, method, email);
-    console.log('sendData -> response', response);
-
+    return response;
   } catch (e) {
-    console.log('sendData -> e', e);
+    return e;
   }
 };
 
