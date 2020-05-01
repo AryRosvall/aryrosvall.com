@@ -1,8 +1,10 @@
 # aryrosvall.com
 
+#  [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge&logo=appveyor)](https://github.com/facebook/react/blob/master/LICENSE) 
+
 This is the code of my personal portfolio made with ♥️ in React JS.
 
-## Install
+## Installation
 
 ```npm
 npm install
@@ -14,8 +16,19 @@ npm install
 npm run start
 ```
 
+## Stack
+
+- React JS
+- Stylus
+
+
 # Contributing
 If someone wants to add or improve something, I invite you to collaborate directly in this repository: [aryrosvall.com](https://github.com/AryRosvall/aryrosvall.com)
 
-# License
-random-msg is released under the [MIT License](https://opensource.org/licenses/MIT).
+## About Me
+
+[![aryrosvall](https://img.shields.io/badge/aryrosvall.com-blue?style=for-the-badge&logo=appveyor)](https://aryrosvall.com)
+[![Twitter](https://img.shields.io/badge/Twitter-9cf?style=for-the-badge&logo=appveyor)](https://twitter.com/AryRosvall)
+[![GitHub](https://img.shields.io/badge/GITHUB-green?style=for-the-badge&logo=appveyor)](https://github.com/AryRosvall)
+
+
