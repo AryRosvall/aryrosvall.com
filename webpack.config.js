@@ -65,7 +65,8 @@ module.exports = () => {
         filename: 'assets/[name].css',
       }),
       new webpack.DefinePlugin({
-        'process.env.API_URL': JSON.stringify('https://5d2e5ce6.ngrok.io/'),
+        //'process.env.API_URL': JSON.stringify('https://5d2e5ce6.ngrok.io/'),
+        'process.env.API_URL': JSON.stringify('https://porfolioapi.herokuapp.com/'),
       }),
     ],
   };
