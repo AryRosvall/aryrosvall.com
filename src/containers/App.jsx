@@ -23,20 +23,25 @@ const App = () => {
     projects,
   } = getInitialState();
 
-  return (
-    <>
-      <Hero {...profile} />
-      <Menu />
-      <Profile {...profile} />
-      <Skills skills={skills} />
-      <Experience experience={experiences} />
-      <Academic academic={academic} />
-      <Languages languages={languages} />
-      <Projects projects={projects} />
-      <Contact />
-      <Footer />
-    </>
-  );
+  return (profile &&
+    skills &&
+    experiences &&
+    academic &&
+    languages &&
+    projects) ? (
+      <>
+        <Hero {...profile} />
+        <Menu />
+        <Profile {...profile} />
+        <Skills skills={skills} />
+        <Experience experience={experiences} />
+        <Academic academic={academic} />
+        <Languages languages={languages} />
+        <Projects projects={projects} />
+        <Contact />
+        <Footer />
+      </>
+    ) : (<div>Loading</div>);
 };
 
 export default App;

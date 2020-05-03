@@ -1,22 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useAlert } from 'react-alert';
 import { sendMessage } from '../utils/fetchData';
-import useFormFields from '../hooks/useFormFields';
 import { API_URL } from '../hooks/initialState';
 import '../assets/styles/components/Contact.styl';
 
 const Contact = () => {
 
-  const [fields, handleFieldChange] = useFormFields({
+  const alert = useAlert();
+
+  const initialState = {
     from: '',
     message: '',
     name: '',
-  });
+  };
+
+  const [{ from, message, name }, setState] = useState(initialState);
+
+  const clearState = () => {
+    setState({ ...initialState });
+  };
+
+  const handleFieldChange = (e) => {
+    const { name, value } = e.target;
+    setState(prevState => ({ ...prevState, [name]: value }));
+  };
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-
-    sendMessage(`${API_URL}api/email`, 'POST', fields)
-      .then(message => console.log('handleFormSubmit -> message', message));
+    sendMessage(`${API_URL}api/email`, 'POST', { from, message, name })
+      .then(() => {
+        clearState();
+        alert.show('Mensaje enviado');
+      });
   };
 
   return (
@@ -30,9 +45,9 @@ const Contact = () => {
         <h1>Get in touch!</h1>
         <hr />
         <form className='form' method='POST' onSubmit={handleFormSubmit}>
-          <input type='text' name='name' id='text' placeholder='name' onChange={handleFieldChange} />
-          <input type='email' name='from' id='from' placeholder='email' onChange={handleFieldChange} />
-          <textarea name='message' id='textarea' placeholder='message' rows='4' cols='50' onChange={handleFieldChange} />
+          <input type='text' name='name' id='text' placeholder='name' value={name} onChange={handleFieldChange} />
+          <input type='email' name='from' id='from' placeholder='email' value={from} onChange={handleFieldChange} />
+          <textarea name='message' id='textarea' placeholder='message' rows='4' cols='50' value={message} onChange={handleFieldChange} />
           <button type='submit'>Send message</button>
         </form>
       </section>
