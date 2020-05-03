@@ -6,7 +6,7 @@ import App from './containers/App';
 
 const options = {
   position: positions.MIDDLE,
-  timeout: 30000,
+  timeout: 3000,
   offset: '50px',
   type: 'info',
   transition: transitions.SCALE,
