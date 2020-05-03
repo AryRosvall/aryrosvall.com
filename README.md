@@ -4,6 +4,21 @@
 
 This is the code of my personal portfolio made with ♥️ in React JS.
 
+## The views 
+
+### Mobile view
+
+![Mobile](https://i.imgur.com/UszN9UB.png)
+
+### Tablet view
+
+![Tablet](https://i.imgur.com/fevaTuF.png)
+
+### Laptop view
+
+![Laptop](https://i.imgur.com/bEQuP4T.png)
+
+
 ## Installation
 
 ```npm
