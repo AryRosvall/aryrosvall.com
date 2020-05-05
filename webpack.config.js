@@ -66,7 +66,7 @@ module.exports = () => {
       }),
       new webpack.DefinePlugin({
         //'process.env.API_URL': JSON.stringify('https://5d2e5ce6.ngrok.io/'),
-        'process.env.API_URL': JSON.stringify('https://porfolioapi.herokuapp.com/'),
+        'process.env.REACT_APP_API_URL': JSON.stringify('http://api.aryrosvall.com/'),
       }),
     ],
   };
