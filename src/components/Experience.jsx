@@ -20,11 +20,11 @@ const Experience = (props) => {
               {item.company}
             </p>
             <p className='Experience__dates'>
-              {item.startDate}
+              {item.startDateLabel}
               {' '}
               -
               {' '}
-              {item.endDate}
+              {item.endDateLabel}
             </p>
           </div>
           <div className='Experience__description'>
