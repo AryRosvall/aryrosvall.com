@@ -101,7 +101,6 @@
     margin: -42px 0 0 450px;
     padding: 50px;
     padding-top: 125px;
-    background: baseColor;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     /* to stop flickering of text in safari */
@@ -113,6 +112,8 @@
     padding: 10px 0;
     font-size: 22px;
 
-  #check input:checked ~ #menu1
-    display block
-    transform: translate(-190%, 0);
+   #menuToogle input:checked
+    & ~ .menu__options
+      display block
+      margin: 0;
+      padding 20px;
