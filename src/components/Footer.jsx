@@ -30,7 +30,7 @@ const Footer = (props) => {
   return (
     <footer id='Contact'>
       <div className='footer__up' >
-        <a href='#Home'>
+        <a href='#Home' aria-label="Return to home">
           <i dest='#Home'>
             <Stack size='50px' tabindex="0">
               <Icon
@@ -45,15 +45,15 @@ const Footer = (props) => {
       </div>
       <div className='social_media__container'>
         {Social.map(item => (
-          <a tabindex="-1" className='Social__item' key={item.name} href={item.url} target='_blank' rel='noopener noreferrer'>
-            <FontAwesomeIcon tabindex="0" className='Social__icon' key={item.url} icon={['fab', item.name]} />
+          <a tabindex="-1" className='Social__item' key={item.name} alt={item.name} aria-label={item.name} href={item.url} target='_blank' rel='noopener noreferrer'>
+            <FontAwesomeIcon tabindex="0" className='Social__icon' key={item.url} icon={['fab', item.name]} aria-label={item.name} alt={item.name} />
           </a>
         ))}
       </div>
       <div className='footnote'>
         Made with
         {' '}
-        <span role='img' aria-label=''>♥️</span>
+        <span role='img' aria-label='heart'>♥️</span>
         {' '}
         by @AryRosvall
         {' '}

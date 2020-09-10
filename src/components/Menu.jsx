@@ -41,11 +41,11 @@ const Menu = (props) => {
           <ul className='menu__options'>
             {
               menus.map((menu, index) => (
-                <a key={menu.name} href={`#${menu.link}`}>
-                  <li className='Menu__option'>
+                <li className='Menu__option'>
+                  <a key={menu.name} href={`#${menu.link}`} aria-label={menu.name}>
                     {menu.name}
-                  </li>
-                </a>
+                  </a>
+                </li>
               ))
             }
           </ul>

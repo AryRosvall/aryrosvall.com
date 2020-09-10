@@ -45,9 +45,9 @@ const Contact = () => {
         <h1>Get in touch!</h1>
         <hr />
         <form className='form' method='POST' onSubmit={handleFormSubmit}>
-          <input type='text' name='name' id='text' placeholder='name' value={name} onChange={handleFieldChange} />
-          <input type='email' name='from' id='from' placeholder='email' value={from} onChange={handleFieldChange} />
-          <textarea name='message' id='textarea' placeholder='message' rows='4' cols='50' value={message} onChange={handleFieldChange} />
+          <input type='text' aria-label="Name" name='name' id='text' placeholder='name' value={name} onChange={handleFieldChange} />
+          <input type='email' name='from' aria-label="Email" id='from' placeholder='email' value={from} onChange={handleFieldChange} />
+          <textarea name='message' data-gramm_editor="false" aria-label="Message" id='textarea' placeholder='message' rows='4' cols='50' value={message} onChange={handleFieldChange} />
           <button type='submit'>Send message</button>
         </form>
       </section>

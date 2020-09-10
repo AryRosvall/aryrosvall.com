@@ -42,7 +42,7 @@ const Academic = (props) => {
               <div>
                 <FontAwesomeIcon icon={faGlobeAmericas} />
 
-                <a href={item.website} target='_blank' rel='noopener noreferrer'>{item.website}</a>
+                <a href={item.website} target='_blank' rel='noopener noreferrer' aria-label={item.institution}>{item.website}</a>
               </div>
             </div>
           </div>

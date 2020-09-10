@@ -10,12 +10,12 @@ const Profile = (props) => {
       <div className='Profile__Container'>
         <div className='Profile__Title'>
           <h1>About Me</h1>
-          <h3>{profileTitle}</h3>
+          <h2>{profileTitle}</h2>
           <hr />
         </div>
         <div className='Profile__Description'>
           <figure>
-            <img src={avatar} alt='' />
+            <img src={avatar} alt='Arantxa Rosas' />
           </figure>
           <p>
             {description}

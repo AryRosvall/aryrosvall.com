@@ -36,7 +36,7 @@ const Hero = (props) => {
           </TextyAnim>
         </div>
         <div>
-          <a href='#Profile'>Check out my work!</a>
+          <a href='#Profile' aria-label="Check out my work">Check out my work!</a>
         </div>
       </div>
     </section>

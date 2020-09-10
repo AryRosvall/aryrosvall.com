@@ -43,7 +43,7 @@ const Experience = (props) => {
               <div>
                 <FontAwesomeIcon icon={faGlobeAmericas} />
 
-                <a href={item.website} target='_blank' rel='noopener noreferrer'>{item.website}</a>
+                <a href={item.website} target='_blank' rel='noopener noreferrer' aria-label={item.company} >{item.website}</a>
               </div>
             </div>
           </div>
