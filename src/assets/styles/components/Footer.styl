@@ -10,7 +10,7 @@ footer
   position relative
 
 footer .footer__up svg
-  background-color highlightColor1
+  background-color button2
   cursor pointer
   font-size 30pt
   height 50px
@@ -21,24 +21,32 @@ footer .footer__up svg
   top -25px
   transition background 0.5s
   width 47px
-  &:hover
+  &:hover, &:focus
     background-color hoverButton2
+    transform scale(1.1)
 
-footer .Social__item svg
-  font-size 20pt
-  left 0
-  line-height 40pt
-  margin 0 10px
-  right 0
-  top -25px
-  transition: background 0.5s
-  background-color semiDark
-  padding 15px
-  cursor pointer
-  &:hover
-    background highlightColor2
-    box-shadow 0 0 0 3px rgba(4, 94, 201, 0.1)
-    transform scale(0.9)
+footer .Social__item 
+  & svg
+    font-size 20pt
+    left 0
+    line-height 40pt
+    margin 0 10px
+    right 0
+    top -25px
+    transition: background 0.5s
+    background-color semiDark
+    padding 15px
+    cursor pointer
+    &:hover
+      background highlightColor2
+      box-shadow 0 0 0 3px rgba(4, 94, 201, 0.1)
+      transform scale(0.9)
+      outline none
+    &:focus
+      background highlightColor2
+      box-shadow 0 0 0 3px rgba(4, 94, 201, 0.1)
+      transform scale(0.9)
+      outline none
 
 .social_media__container
   margin-bottom 20px

@@ -29,10 +29,10 @@ const Footer = (props) => {
 
   return (
     <footer id='Contact'>
-      <div className='footer__up'>
+      <div className='footer__up' >
         <a href='#Home'>
           <i dest='#Home'>
-            <Stack size='50px'>
+            <Stack size='50px' tabindex="0">
               <Icon
                 path={mdiChevronDoubleUp}
                 color='white'
@@ -45,8 +45,8 @@ const Footer = (props) => {
       </div>
       <div className='social_media__container'>
         {Social.map(item => (
-          <a className='Social__item' key={item.name} href={item.url} target='_blank' rel='noopener noreferrer'>
-            <FontAwesomeIcon className='Social__icon' key={item.url} icon={['fab', item.name]} />
+          <a tabindex="-1" className='Social__item' key={item.name} href={item.url} target='_blank' rel='noopener noreferrer'>
+            <FontAwesomeIcon tabindex="0" className='Social__icon' key={item.url} icon={['fab', item.name]} />
           </a>
         ))}
       </div>
@@ -57,9 +57,9 @@ const Footer = (props) => {
         {' '}
         by @AryRosvall
         {' '}
-        <span className='footnote--highlight'>©2020</span>
+        <span >©2020</span>
       </div>
-    </footer>
+    </footer >
   );
 };
 
